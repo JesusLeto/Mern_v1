@@ -1,0 +1,4 @@
+{
+  "PORT": 5000,
+  "URLdb": "mongodb+srv://dbUser:dbUserPassword@cluster-mern.8st7o.mongodb.net/Cluster-Mern?retryWrites=true&w=majority"
+}
