@@ -1,0 +1,23 @@
+.group {
+    box-sizing: border-box;
+    display: flex;
+    width: 300px;
+    border-bottom: 2px solid gray;
+}
+
+input {
+    width: 100%;
+    margin-left: 10px;
+    border: none;
+}
+
+input:focus {
+    outline: none;
+}
+.active::placeholder {
+    color: black;
+}
+
+.ac {
+    border-bottom: 2px solid black;
+}
