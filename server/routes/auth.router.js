@@ -65,8 +65,6 @@ router.post('/login', async (req,res) => {
             email: currentUser.email
     })
 
-
-
     }catch (e) {
         console.log(e)
         return res.send({message: `Server error ${e}`})

@@ -1,0 +1,8 @@
+{
+  "placeholder" : {
+    "name": "Your Name",
+    "email": "Your Email",
+    "password": "Password",
+    "repeatPassword": "Repeat your password"
+  }
+}
