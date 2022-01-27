@@ -17,6 +17,7 @@ async (req, res) => {
     try{
         const errorsValidation = validationResult(req)
         if(!errorsValidation.isEmpty()) {
+            //Fix
             const {msg} = errorsValidation.errors[0]
             return res.status(400).json({message: `Registration not current: ${msg}`})
         }
