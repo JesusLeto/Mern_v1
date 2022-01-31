@@ -4,5 +4,5 @@ import Vue from "vue";
 import Vuex from "vuex";
 
 Vue.use(Vuex)
-const instance = new RootStore()
+export const instance = new RootStore()
 export default createVuexStore(instance)

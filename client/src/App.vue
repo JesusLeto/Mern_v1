@@ -1,23 +1,23 @@
 <template>
   <div id="app">
-    <div>
-      {{"App"}}
-    </div>
+    <router-view/>
   </div>
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
-import {Component} from "vue-property-decorator";
+import {Component, Vue} from "vue-property-decorator";
 
 @Component
 export default class App extends Vue {
-  mounted() {
-    const currentState = this.$vclStore
-  }
 }
 
 </script>
 
 <style lang="scss">
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 </style>
