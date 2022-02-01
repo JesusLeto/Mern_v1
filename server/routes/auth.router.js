@@ -22,7 +22,7 @@ async (req, res) => {
             return res.status(400).json({message: `Registration not current: ${msg}`})
         }
 
-        const {email, password} = req.body
+        const {email, password, name} = req.body
         const userAlreadyExist = await User.findOne({email})
 
         if(userAlreadyExist) {
@@ -31,7 +31,7 @@ async (req, res) => {
 
         const hashPassword = await bcrypt.hash(password, 8)
 
-        const user = new User({email, password: hashPassword})
+        const user = new User({email, password: hashPassword, name})
 
         await user.save()
 

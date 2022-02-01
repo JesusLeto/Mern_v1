@@ -1,7 +1,6 @@
 <template>
-  <form
+  <div
       class="vcl-form"
-      @submit.prevent
 
   >
     <div
@@ -24,7 +23,7 @@
       <slot/>
     </div>
 
-  </form>
+  </div>
 </template>
 
 <script lang="ts">
